@@ -21,10 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -32,7 +29,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     testImplementation 'junit:junit:4.13.2'
@@ -42,7 +39,7 @@ dependencies {
 ext {
     PUBLISH_GROUP_ID = 'io.github.prashantrajput1612'
     PUBLISH_VERSION = '1.0.0'
-    PUBLISH_ARTIFACT_ID = 'MavenLibraryPublish'
+    PUBLISH_ARTIFACT_ID = 'OSSRH-89075'
     PUBLISH_DESCRIPTION = 'Create a repository for Maven Central Library Publish Demo'
     PUBLISH_URL = 'https://github.com/prashantrajput1612/MavenLibraryPublish'
     PUBLISH_LICENSE_NAME = 'Apache License'

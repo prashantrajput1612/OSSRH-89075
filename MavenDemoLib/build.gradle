@@ -39,3 +39,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+ext {
+    PUBLISH_GROUP_ID = 'io.github.prashantrajput1612'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'MavenLibraryPublish'
+    PUBLISH_DESCRIPTION = 'Create a repository for Maven Central Library Publish Demo'
+    PUBLISH_URL = 'https://github.com/prashantrajput1612/MavenLibraryPublish'
+    PUBLISH_LICENSE_NAME = 'Apache License'
+    PUBLISH_LICENSE_URL =
+            'https://github.com/prashantrajput1612/MavenLibraryPublish/blob/master/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'prashantrajput1612'
+    PUBLISH_DEVELOPER_NAME = 'Prashant Rajput'
+    PUBLISH_DEVELOPER_EMAIL = 'prashant.rajput@volansys.com'
+    PUBLISH_SCM_CONNECTION =
+            'scm:git:github.com/prashantrajput1612/MavenLibraryPublish.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION =
+            'scm:git:ssh://github.com/prashantrajput1612/MavenLibraryPublish.git'
+    PUBLISH_SCM_URL =
+            'https://github.com/prashantrajput1612/MavenLibraryPublish/tree/master'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"

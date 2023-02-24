@@ -38,10 +38,12 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.mikhaellopez:circularimageview:4.3.1'
 }
 ext {
     PUBLISH_GROUP_ID = 'io.github.prashantrajput1612'
-    PUBLISH_VERSION = '1.0.1'
+    PUBLISH_VERSION = '1.0.2'
     PUBLISH_ARTIFACT_ID = 'OSSRH-89075'
     PUBLISH_DESCRIPTION = 'Create a repository for Maven Central Library Publish Demo'
     PUBLISH_URL = 'https://github.com/prashantrajput1612/OSSRH-89075'
